@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html> 
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Joseph Dominic L. Cruz and Ceph Matthew R. Sangalang">
+  <meta name="revised" content="01/22/2025" id = "revised"/>
+  <meta name="keywords" content="Chess, how to play chess, chess game online, chess online, Chess Game Online, CHESS, Chess News, Chess Openings">
+  <meta name="description" content="This website enables users to access content related to chess. It enables them to understand the game and practice their skills in it through an interface containing a playable virtual chess board and sections wherein users can access their statistics and ranking.">
+  <title> Chessmate Home </title>
+  <link href="style-index.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/4121bcca-a166-4a87-81fb-60e71e4bb1fe/web-favicon.png?v=1735218363854">
+</head>
+  
+<body id = "content_home">
+      <!--Creates the navigation pane.-->
+      <nav class = "navigationpane">
+       <div class = "title">
+         <!--Division containing menu.-->
+         <div class = "hmenu" id = "hmenu1">
+           <!--List containing outer links.-->
+            <ul class = "panellinks" id = "panellinks1">
+              <!--List entry of top title.-->
+              <li class = "toptitle"> 
+                <a href = "index.html" class = "title"> Chessmate </a>
+              </li>
+              <!--List entries below contain outer links with dropdown boxes that container inner links.-->
+              <li class = "topsection">
+                <div class = "dropdown">
+                  <a href = "index.html" class = "toplink"> Home </a>
+                  <div class = "dropdowncontent">
+                    <a class = "inlink" href = "https://wdprojberylliumcruzsangalang-.glitch.me/index.html#home-header1">What is Chess?</a>
+                    <a class = "inlink" href = "https://wdprojberylliumcruzsangalang-.glitch.me/index.html#home-header2">Why Play Chess?</a>
+                    <a class = "inlink" href = "https://wdprojberylliumcruzsangalang-.glitch.me/index.html#home-header3">About Chessmate</a>
+                    <a class = "inlink" href = "https://wdprojberylliumcruzsangalang-.glitch.me/index.html#home-header4">Our Commitment</a>
+                  </div>
+                </div>
+              </li>
+              <li class = "topsection">
+                <div class = "dropdown">
+                  <a href = "page_1-Chess-Mechanics.html" class = "toplink"> Guide to Playing Chess </a>
+                  <div class = "dropdowncontent">
+                    <a class = "inlink" href = "page_1-Chess-Mechanics.html">Mechanics in Playing Chess</a>
+                    <a class = "inlink" href = "page_2-Chess-Openings.html">Strategies in Chess</a>
+                    <a class = "inlink" href = "page_3-Chess-Puzzles.html">Practice with Chess Puzzles</a>
+                  </div>
+                </div>
+              </li>
+              <li class = "topsection">
+                <div class = "dropdown">
+                  <a href = "https://theweekinchess.com/" class = "toplink"> News </a>
+                  <div class = "dropdowncontent">
+                    <a class = "inlink" href = "https://theweekinchess.com/">Week in Chess</a>
+                    <a class = "inlink" href = "https://www.bbc.com/news/topics/cm8m13335l1t">BBC Chess</a>
+                    <a class = "inlink" href = "https://www.fide.com/news">FIDE</a>
+                    <a class = "inlink" href = "https://docs.google.com/forms/d/e/1FAIpQLSfMK8K0nQpKBID5rdGi3QM6C_gmgWXy-OvOxasDGk6wo8mo5g/viewform?usp=sf_link">Subscribe to <span style = "font-weight: bold; font-style:italic; font-family: Verdana, sans-serif">CHECK!</span></a>
+                  </div>
+                </div>
+              </li>
+              <li class = "topsection">
+                <div class = "dropdown">
+                  <a href = "chess-game.html" class = "toplink"> Chess Game </a>
+                </div>
+              </li>
+              <li class = "topsection">
+                <div class = "dropdown" id = "searchcontainer">
+                  <input class = "searchbar" id = "searchbar1" type = "text" placeholder = "Search">
+                  <div class = "searchresults" id = "searchitems">
+                    "Searching..."
+                  </div>
+                </div>
+                <div>
+                  <button class = "searchbutton" onclick = "tester()">
+                    <img src = "https://cdn.glitch.global/4121bcca-a166-4a87-81fb-60e71e4bb1fe/search-ui-icon-png.png?v=1734847288013" width = "50vh" height = "50vh">
+                  </button>
+                </div>
+              </li>
+            </ul>
+         </div>
+       </div>
+      </nav>
+      <!--Creates area containing header.-->
+      <header class = "mainheader" id = "mainheader_1">
+        <div class = "headerbackground">
+          <div class = "headercolor">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <h1 class = "maintitle"> Chessmate </h1>
+            <br/>
+            <h2 class = "subtitle"> The Ultimate Website for Anything Chess </h2>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+          </div>
+        </div>
+      </header>
+      <br/>
+      <section class = "contentarea" id = "home_contentarea">
+        <div>
+          <!--1st header-->
+          <span id = "home-header1" class = "header"> What is Chess? </span>
+          <br/>
+          <!--1st main content area-->
+          <article id = "home-content1" class = "content">
+            <figure id = "home-figure_1-1">
+              <img src = "https://cdn.glitch.global/4121bcca-a166-4a87-81fb-60e71e4bb1fe/chessboard-1024x768-1-960x720.jpeg?v=1735310059602" width = "500vh" alt = "Standard Chess Board Setup" title = "Chessboard">
+              <figcaption class = "caption">Standard chessboard setup (<i>How to set up a chessboard easily</i>, 2024)</figcaption>
+            </figure>
+            <p id = "home-para1-1" class = "para1">
+              Chess is a strategic boardgame wherein two players are involved. It features a checkered board with eight rows and eight columns. On either end of the board, there is a set of pieces occupying two rows. Each set has a distinct color wherein one is identified as “black” and the other is identified as “white.” Players choose their sides and take turns moving pieces with specific ranks, values, and legal moves from their own sets. Doing so enables them to capture each other's pieces by legally moving their piece to a square wherein there is another piece or threaten to capture their opponent's special piece called the "king." Players strategize and use their available moves to defend their pieces and their king, for if one player threatens or “checks” the king of the other using several pieces such that the king has no place to go and is in active danger of being captured, the player who caused the king of the other to be “checkmate” wins.
+            </p>
+            <br/>
+            <p id = "home-para1-2" class = "para2">
+              
+            </p>
+            <br/>
+          </article>
+        </div>
+        <div>
+          <!--2nd header-->
+          <span id = "home-header2" class = "header"> Why Play Chess? </span>
+          <br/>
+          <!--2nd main content area-->
+          <article id = "home-content2" class = "content">
+            <p id = "home-para2-1" class = "para1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+            <br/>
+            <p id = "home-para2-2" class = "para2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+            <br/>
+          </article>
+        </div>
+        <div>
+          <!--3rd header-->
+          <span id = "home-header3" class = "header"> About Chessmate </span>
+          <br/>
+          <!--3rd main content area-->
+          <article id = "home-content3" class = "content">
+            <p id = "home-para3-1" class = "para1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+            <br/>
+            <p id = "home-para3-2" class = "para1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </article>
+        </div>
+        <div>
+          <!--4th header-->
+          <span id = "home-header4" class = "header"> Our Commitment </span>
+          <br/>
+          <!--4th main content area-->
+          <article id = "home-content4" class = "content">
+            <p id = "home-para4-1" class = "para1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+            <br/>
+            <p id = "home-para4-2" class = "para1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </article>
+        </div>
+        <i><span id = "date"></span></i>
+      </section>
+      <hr/>
+      <!--Creates area containing footer.-->
+      <section class = "footerarea">
+        <!--Creates area containing contact details.-->
+        <div class = "contactus" id = "contactus1">
+          <h2 class = "footerheading" id = "footerheading1">Contact Us</h2>
+          <ul class = "contactlist" id = "contactlist1">
+            <!--Each entry in this list contains icons linked to specific websites for contact between users and website owners.-->
+            <li class = "contact" id = "contact1">
+              <a class = "linkicon" href = "https://www.facebook.com/CephSangalang"><img class = "icon" src = "https://cdn.glitch.global/4121bcca-a166-4a87-81fb-60e71e4bb1fe/facebook-circle-logo-png.png?v=1735306387933" height = "40px" width = "40px" alt = "Facebook page: https://www.facebook.com/CephSangalang" title = "Facebook page"></a>
+            </li>
+            <li class = "contact" id = "contact2">
+              <a class = "linkicon" href = "mailto: b2028jdlcruz@pshs.edu.ph"><img class = "icon" src = "https://cdn.glitch.global/4121bcca-a166-4a87-81fb-60e71e4bb1fe/Gmail_Logo_512px.png?v=1735306396713" height = "40px" width = "40px" alt = "Gmail: b2028jdlcruz@pshs.edu.ph" title = "Gmail"></a>
+            </li>
+            <li class = "contact" id = "contact3">
+              <a class = "linkicon" href = "sms:+630960-305-1941"><img class = "icon" src = "https://cdn.glitch.global/4121bcca-a166-4a87-81fb-60e71e4bb1fe/sms-icon-2048x1893-up2dt48h.png?v=1735306407794" height = "40px" width = "40px" alt = "Phone/SMS: 09603051941" title = "Phone/SMS"></a>
+            </li>
+            <li class = "contact" id = "contact4">
+              <a class = "linkicon" href = "https://www.youtube.com/@Chessmate-Online"><img class = "icon" src = "https://cdn.glitch.global/4121bcca-a166-4a87-81fb-60e71e4bb1fe/free-youtube-logo-icon-2431-thumb.png?v=1735306392489" height = "40px" width = "40px" alt = "Youtube: https://www.youtube.com/@Chessmate-Online" title = "Youtube"></a>
+            </li>
+            <li class = "contact" id = "contact5">
+              <a class = "linkicon" href = "https://www.instagram.com/cephsang/"><img class = "icon" src = "https://cdn.glitch.global/4121bcca-a166-4a87-81fb-60e71e4bb1fe/Instagram_icon.png.webp?v=1735306401712" height = "40px" width = "40px" alt = "Instagram page: https://www.instagram.com/cephsang/" title = "Instagram page"></a>
+            </li>
+          </ul>
+        </div>
+        <!--Copyright notice-->
+        <footer class = "copyrightnotice">
+          Copyright &copy Cruz and Sangalang <span id = "year"></span>
+          All Rights Reserved
+          <br/>
+          <br/>
+          <div class = "sources">
+            <!--References-->
+            <span style= "font-weight: bold">References:</span>
+            <ul style="list-style-type: none">
+              <li>Brown, R.A. (2022, September 16). <em>Telephone links: how to add “call-able” links [&] CTA’s to your website. </em>https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number#:~:text=Adding%20an%20HTML%20Phone%20Number%20Call%20Link%20to%20your%20Website,-Add%20the%20code&text=Href%3Dtel%3A%20creates%20the%20call,the%20number%20it%20will%20call.</li>
+              <li>British Broadcasting Corporation. (n.d.). <em>Chess. </em>https://www.bbc.com/news/topics/cm8m13335l1t</li>
+              <li>Chess.com. (2021, July 14). <em>How to play chess: learn all the rules of the royal game </em>https://www.youtube.com/watch?v=ej_fnsdsksA</li>
+              <li><em>How to set up a chessboard easily. </em>(2024, January 23). Chess for sharks. https://chessforsharks.co/how-to-set-up-a-chessboard/</li>
+              <li>International Chess Federation. (n.d.). <em>Chess news. </em>https://www.fide.com/news</li>
+              <li>The Week in Chess. (n.d.). <em>The week in chess. </em>https://theweekinchess.com</li>
+              <li><em>Multimedia tags (video,audio). </em>(n.d.). Khub. https://khub.mc.pshs.edu.ph/mod/book/view.php?id=87</li>
+              <li>W3Schools. (n.d.). <em>CSS horizontal navigation bar. </em>https://www.w3schools.com/css/css_navbar_horizontal.asp</li>
+              <li>W3Schools. (n.d.). <em>CSS navigation bar. </em>https://www.w3schools.com/css/css_navbar.asp</li>
+              <li>W3Schools. (n.d.). <em>CSS pseudo-classes. </em>https://www.w3schools.com/css/css_pseudo_classes.asp</li>
+              <li>W3Schools. (n.d.). <em>CSS rounded corners. </em>https://www.w3schools.com/css/css3_borders.asp</li>
+              <li>W3Schools. (n.d.). <em>CSS text spacing. </em>https://www.w3schools.com/css/css_text_spacing.asp</li>
+              <li>W3Schools. (n.d.). <em>CSS transitions. </em>https://www.w3schools.com/css/css3_transitions.asp</li>
+              <li>W3Schools. (n.d.). <em>CSS vertical navigation bar. </em>https://www.w3schools.com/css/css_navbar_horizontal.asp</li>
+              <li>W3Schools. (n.d.). <em>HTML text formatting. </em>https://www.w3schools.com/html/html_formatting.asp</li>
+            </ul>
+          </div>
+        </footer>
+      </section>
+      <!--Tag linking the HTML document to the Javascript code.-->
+      <script src="script-index.js"></script>
+</body>
+  
+</html>

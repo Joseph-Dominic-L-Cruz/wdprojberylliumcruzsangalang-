@@ -1,0 +1,335 @@
+/*This block of code styles the entire HTML document.*/
+* {
+  overflow: visible;
+}
+
+/*This block of styles the alignment properties of the body. It ensures that the body will cover the entire webpage and that the body has a scrollable overflow.*/
+body {
+  margin: 0;
+  overflow: auto;
+  width: 100%;
+}
+
+/*This block of code styles the navigation pane of the webpage.*/
+nav.navigationpane {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+/*This block of code styles the division containing the "Chessmate" title in the navigation pane.*/
+div.title {
+  font-weight: bold;
+  font-family: "Times New Roman", serif;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 3vh;
+  font-style: italic;
+  text-decoration: none;
+  border: 0.125vh solid white;
+  height: 10vh;
+  width: 100%;
+}
+
+/*This block of code styles the title "Chessmate" found in the navigation pane.*/
+a.title {
+  font-weight: bold;
+  font-family: "Times New Roman", serif;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding-left: 0.6%;
+  padding-right: 0.6%;
+  font-size: 3vh;
+  font-style: italic;
+  text-decoration: none;
+  margin: 0;
+  position: static;
+  float: left;
+}
+
+/*This block of code styles the horizontal outer list of links in the webpage's navigation bar.*/
+.panellinks {
+  list-style-type: none;
+  display: flex;
+}
+
+/*This block of code styles the container of each outer link in the navigation bar of the webpage.*/
+.topsection {
+  display: inline;
+}
+
+/*This block of code styles each outer link in the webpage's navigation bar.*/
+.toplink {
+  color: white;
+  text-decoration: none;
+  font-style: normal;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  padding: 3.333vh 0;
+  padding-left: 3.333vh;
+  padding-right: 3.333vh;
+  border-left: 0.125vh solid white;
+  border-right: 0.125vh solid white;
+}
+
+/*This block of code styles each outer link in the webpage's navigation bar when one hovers over them.*/
+.topsection .toplink:hover {
+  background-color: rgb(100, 115, 115);
+}
+
+/*This block of code styles the dropdown box of under outer link in the webpage's navigation bar.*/
+.dropdown {
+  position: relative;
+  top: -3.333vh;
+  left: 33.333vh;
+  
+}
+
+/*This block of code styles the containers of each inner link under the webpage's navigation bar's outer links.*/
+.dropdowncontent{
+  background: #dddddd;
+  height: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  transition: all .5s ease;
+  width: 36.667vh;
+}
+
+/*This block of code styles the said dropdown boxes when hovered on and the content within the boxes.*/
+.dropdown:hover .dropdowncontent {
+  height: 70%;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*This block of code styles the inner links within the said dropdown boxes.*/
+.inlink {
+  display: block;
+  height: 80%;
+  border: 0.125vh solid white;
+  color: white;
+  font-size: 2.667vh;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  background-color: gray;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  overflow: scroll;
+}
+
+/*This block of code styles the inner links when one hovers on them.*/
+.inlink:hover {
+  background-color: rgb(64,64,64)
+}
+
+/*This block of code styles the search bar.*/
+input.searchbar {
+  position: relative;
+  border-radius: 10%;
+  top: 1.5vh;
+  left: 1.667vh;
+  padding-top: 4%;
+  padding-bottom: 6%;
+  width: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: width 1s;
+  font-size: 3.333vh;
+}
+
+/*This block of code styles the search bar when one hovers on it.*/
+input.searchbar:hover {
+  background-color: white;
+  width: 70%;
+}
+
+/*This block of code styles the search bar's placeholder.*/
+::placeholder {
+  font-size: 2.667vh;
+}
+
+/*This block of code styles the search bar's placeholder when hovered on.*/
+::placeholder:hover {
+  color: black;
+  font-size: 2.667vh;
+}
+
+button.searchbutton {
+  position: absolute;
+  right: 0.25%;
+  top: 15%;
+  width: 8.333vh;
+  height: 8.333vh;
+  border-radius: 10%;
+}
+
+div.searchresults {
+  position: absolute;
+  bottom: -100%;
+  left: 5%;
+  background-color: gray;
+  width: 200%;
+  overflow: auto;
+  display: none;
+}
+
+div#searchcontainer:hover div.searchresults {
+  display: block;
+}
+
+/*This block of code styles the webpage's main title.*/
+h1.maintitle {
+  font-size: 16.667vh;
+  font-weight: 200;
+  font-family: "Verdana", sans-serif;
+  text-align: center;
+  color: white;
+  text-shadow: 0.125vh 0.125vh black;
+  padding: 0;
+  margin: 0;
+}
+
+/*This block of code styles the webpage's main subtitle.*/
+h2.subtitle {
+  font-size: 3.333vh;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+  text-shadow: 0.125vh 0.125vh black;
+}
+
+/*This block of code styles the background image of the webpage's main title.*/
+div.headerbackground {
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-image: url(https://cdn.glitch.global/4121bcca-a166-4a87-81fb-60e71e4bb1fe/phpY7CUiz.jpeg?v=1735312568584);
+}
+
+/*This block of code styles the background color of the webpage's main title.*/
+div.headercolor {
+  background-color: rgba(0,0,0,0.7);
+}
+
+/*This block of code styles the main content section of the webpage.*/
+section.contentarea {
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 5vh;
+  padding-left: 1%;
+  text-align: justify;
+}
+
+/*These blocks of code styles the content area's paragraphs and their subheadings.*/
+
+/*This block of code styles the content paragraphs of the webpage*/
+.para1, .para2, .para3, .para4, .para5, .para6 {
+  font-size: 2.333vh;
+  font-weight: normal;
+  line-height: 200%;
+}
+
+#para1-1 {
+  clear: left;
+}
+
+#para3-1, #para3-3, #para3-5 {
+  clear: right;
+}
+
+#para3-2, #para3-4, #para3-6 {
+  clear: left;
+}
+
+#subheading_3-1, #subheading_3-3, #subheading_3-5 {
+  float: left;
+  padding-left: 7%;
+}
+
+#subheading_3-2, #subheading_3-4, #subheading_3-6 {
+  float: right;
+  padding-right: 7%;
+}
+
+/*These blocks of code styles the content area's figures*/
+
+#figure_1-1 {
+  float: right;
+}
+
+#figure_3-1, #figure_3-3, #figure_3-5 {
+  float: left;
+  padding-left: 5%;
+}
+
+#figure_3-2, #figure_3-4, #figure_3-6 {
+  float: right;
+  padding-right: 5%;
+}
+
+div.oddcontentcontainer {
+  clear: left;
+  padding-right: 10%;
+}
+
+div.evencontentcontainer {
+  clear: right;
+  padding-left: 10%;
+}
+
+/*This block of code styles the section stating the time at which the webpage was last updated.*/
+
+#date {
+  font-size: 2vh;
+  font-weight: normal;
+}
+
+/*This block of code styles the content area's figure captions*/
+
+figcaption.caption {
+  font-size: 1.667pt;
+  font-weight: normal;
+}
+
+/*This block of code styles the main footer section of the webpage.*/
+section.footerarea {
+  background-color: gray;
+  color: white;
+  font-size: 2.167vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 5%;
+  
+}
+
+/*This block of code styles the main contact division of the webpage.*/
+div.contactus {
+  padding-bottom: 5%;
+}
+
+/*This block of code styles the heading of the main footer section of the webpage.*/
+h2.footerheading {
+  padding-bottom: 5%;
+  font-family: 
+}
+
+/*This block of code style the contact icons*/
+img.icon {
+  padding-left: 5%;
+}
+
+/*This block of code styles the list of contacts in the footer section of the webpage.*/
+ul.contactlist {
+  list-style-type: none;
+}
+
+/*This block of code styles the each contact in the footer section of the webpage.*/
+.contact {
+  display: inline;
+}
